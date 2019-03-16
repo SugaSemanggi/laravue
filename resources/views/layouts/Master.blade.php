@@ -96,6 +96,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </p>
             </router-link>
         </li>
+        <li class="nav-item">
+              <router-link to="/category" class="nav-link">
+                <i class="nav-icon fas fa-cogs orange"></i>
+                <p>
+                    Category
+                </p>
+            </router-link>
+        </li>
+        <li class="nav-item">
+              <router-link to="/post" class="nav-link">
+                <i class="nav-icon fas fa-cogs orange"></i>
+                <p>
+                    Post
+                </p>
+            </router-link>
+        </li>
         @endcan
         @can('isAdmin')
           <li class="nav-item has-treeview">

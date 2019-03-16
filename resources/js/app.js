@@ -28,9 +28,12 @@ Vue.component('pagination', require('laravel-vue-pagination'));
 Vue.use(VueRouter)
 
 let routes = [
+    { path: '/category', component: require('./components/category/index.vue').default},
     { path: '/dashboard', component: require('./components/dashboard.vue').default},
     { path: '/developer', component: require('./components/developer.vue').default},
     { path: '/user', component: require('./components/user.vue').default},
+    { path: '/post', component: require('./components/post/index.vue').default},
+    { path: '/post-create', component: require('./components/post/create.vue').default},
     { path: '/profile', component: require('./components/profile.vue').default},
     { path: '*', component: require('./components/notFound.vue').default},
 ]
